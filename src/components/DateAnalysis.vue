@@ -8,7 +8,7 @@
     </div>
 
     <!-- 날짜 선택 전 -->
-    <p v-if="!selectedDate">날짜를 선택하세요</p>
+    <p v-if="!selectedDate">2025년 2월 또는 3월 중<br/>날짜를 선택하세요</p>
     <!-- 날짜 선택 후 데이터 없을 때 -->
     <p v-else-if="!isDate">해당 날짜의 출결 데이터가 없습니다</p>
   </div>
