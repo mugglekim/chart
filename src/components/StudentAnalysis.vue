@@ -2,6 +2,7 @@
   <div class="student-analysis">
     <h2>학생별 출결 현황</h2>
     <select v-model="selectedStudent">
+      <option disabled selected>학생을 선택하세요</option>
       <option v-for="list in students" :key="list.id" :value="list">{{ list.name }}</option>
     </select>
     <div class="chart-container">
