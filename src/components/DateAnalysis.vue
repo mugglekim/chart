@@ -2,11 +2,15 @@
   <div class="date-analysis">
     <h2>일자별 출결 현황</h2>
     <input type="date" v-model="selectedDate">
+    
     <div class="chart-container" v-if="isDate">
       <canvas ref="chartCanvas"></canvas>
     </div>
-    <!-- 데이터가 없다면 -->
-    <p v-else>해당 날짜의 출결 데이터가 없습니다</p>
+
+    <!-- 날짜 선택 전 -->
+    <p v-if="!selectedDate">날짜를 선택하세요</p>
+    <!-- 날짜 선택 후 데이터 없을 때 -->
+    <p v-else-if="!isDate">해당 날짜의 출결 데이터가 없습니다</p>
   </div>
 </template>
 
