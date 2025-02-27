@@ -80,10 +80,13 @@ import { nextTick, ref, watch } from 'vue';
         padding: 0.5rem 1rem;
         outline: none;
         border-radius: 4px;      
-        }
-        .chart-container{
+      }
+      .chart-container{
           width: 100%; max-width: 400px;
           margin: auto;
-        }
+      }
+      p{
+        margin-top: 2rem;
+      }
     }
 </style>
