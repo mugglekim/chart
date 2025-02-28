@@ -58,6 +58,9 @@ import { nextTick, ref, watch } from 'vue';
     .chart-container{
       width: 100%; max-width: 400px;
       margin: auto;
+      canvas{
+        width: 100%;
+      }
     }
   }
 </style>
